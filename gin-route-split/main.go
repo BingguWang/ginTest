@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/wbing441282413/ginTest/gin-route-split/route"
+	"github.com/wbing441282413/ginTest/gin-route-split/route/order"
+	"github.com/wbing441282413/ginTest/gin-route-split/route/user"
 	"github.com/wbing441282413/ginTest/gin-route-split/routers"
 )
 
@@ -18,7 +19,7 @@ func main() {
 	// })
 
 	//加载定义的路由
-	routers.Include(route.OrderGet, route.UserGet)
+	routers.Include(order.OrderGet, user.UserGet)
 	//初始化路由，绑定路由与处理函数
 	r := routers.Init()
 	r.Run(":8088")

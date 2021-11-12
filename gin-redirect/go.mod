@@ -1,4 +1,4 @@
-module github.com/wbing441282413/ginTest/gin-route-split
+module github.com/wbing441282413/ginTest/gin-redirect
 
 go 1.17
 

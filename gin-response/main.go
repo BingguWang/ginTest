@@ -38,6 +38,11 @@ func main() {
 		c.File("./rmrf.gif") //参数是文件地址
 	})
 
+	// 4.YAML响应
+	r.GET("/yaml", func(c *gin.Context) {
+		c.YAML(200, gin.H{"name": "zhangsan"})
+	})
+
 	r.Run(":8088")
 }
 
