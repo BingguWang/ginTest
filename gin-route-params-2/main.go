@@ -42,6 +42,8 @@ func main() {
 		c.String(http.StatusOK, "xxxx")
 	})
 	r.Run(":8088")
+
+	//TODO 上传多个文件的在中间件案例中
 }
 
 type Singer struct {
